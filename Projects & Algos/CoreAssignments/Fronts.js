@@ -32,6 +32,7 @@ class LinkedList {
 // Add Front: write a methods that accepts a value and create a new node, assign it to the list head, and return a pointer to tne new head node.
 // Remove Front: write a method to remove the head node and return the new list head node. If the list is empyty, return null
 // Front: write a method to return the value (not the node) at the head of the list, if the list is empty, return null
+// Display: create display() that returns a string contraining all list values. Build what you wish console.log(myList) did
 
 class Node { // single linked list node class
     constructor(val){
@@ -86,7 +87,22 @@ class LinkedList { // the linked list class
         } else {
             return this.head.value
         }
+    }
 
+    display() {
+        let listString = ""  
+        if(this.head == null) {
+            return ""
+        } 
+        let nextValue = this.head.next
+        while(nextValue != null) {
+            listString += ", " + nextValue.value
+            nextValue = nextValue.next
+        }
+        return listString
+
+        
+        
     }
 
     
@@ -105,4 +121,6 @@ list.removeFront()
 console.log(list)
 
 console.log(list.front())
+
+console.log(list.display())
 
