@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/quando/Documents/Coding Dojo Work/SpringProjects/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2550303499.index
+609068470.index
+2595460046.index
+2299618113.index
+3814844069.index
+2099164079.index
